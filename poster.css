@@ -1,0 +1,267 @@
+#website {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px black solid;
+
+    #navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 700px;
+        padding: 20px 0px;
+
+        #nav_menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+
+            #nav_text {
+                color: grey;
+                font-size: 20px;
+            }
+
+            #icons {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                #icon {
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 50%;
+                }
+            }
+
+        }
+    }
+
+    #home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px black solid;
+        gap: 15px;
+        padding: 180px 320px;
+        color: white;
+        background: linear-gradient(rgba(0, 0, 255, 0.038), rgba(0, 0, 255, 0.302)), url("./home-bg.png");
+
+
+        #home_one {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        #home_two {
+            font-size: 18px;
+            width: 850px;
+            text-align: center;
+        }
+
+        #home_three {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            #inp {
+                height: 40px;
+                width: 400px;
+                border: 2px rgb(255, 255, 255) solid;
+            }
+
+            button {
+                background-color: rgba(14, 79, 14, 0.794);
+                border: none;
+                cursor: pointer;
+                font-size: 20px;
+                color: white;
+                padding: 10px 30px;
+                border-radius: 3px;
+            }
+        }
+    }
+
+
+    #about {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        padding: 30px 0px;
+
+
+        #card {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+
+            #img {
+                border: 3px rgb(75, 163, 197) solid;
+                padding: 20px;
+                border-radius: 50%;
+
+                img {
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+
+            #card_about {
+                font-size: 22px;
+                width: 200px;
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (min-width:481px) and (max-width:767px) {
+    #website {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px black solid;
+
+        #navbar {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            padding: 20px 0px;
+
+            #nav_menu {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+
+                #nav_text {
+                    color: grey;
+                    font-size: 20px;
+                }
+
+                #icons {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+
+                    #icon {
+                        height: 30px;
+                        width: 30px;
+                        border-radius: 50%;
+                    }
+                }
+
+            }
+        }
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: auto;
+            align-items: center;
+            border: 2px black solid;
+            gap: 15px;
+            padding: 50px 20px;
+            color: white;
+            background: linear-gradient(rgba(0, 0, 255, 0.038), rgba(0, 0, 255, 0.302)), url("./home-bg.png");
+
+
+            #home_one {
+                font-size: 40px;
+                font-weight: bold;
+            }
+
+            #home_two {
+                font-size: 18px;
+                width: auto;
+                text-align: center;
+            }
+
+            #home_three {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                #inp {
+                    padding: 3px;
+                    height: 20px;
+                    width: 230px;
+                    border: 2px rgb(255, 255, 255) solid;
+                }
+
+                button {
+                    background-color: rgba(14, 79, 14, 0.794);
+                    border: none;
+                    cursor: pointer;
+                    font-size: 15px;
+                    color: white;
+                    padding:5px 10px;
+                    border-radius: 3px;
+                }
+            }
+        }
+
+
+        #about {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 30px 30px;
+            border: 2px black solid;
+
+
+            #card {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+
+                #img {
+                    border: 3px rgb(75, 163, 197) solid;
+                    padding: 15px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+
+                #card_about {
+                    font-size: 12px;
+                    width: auto;
+                }
+            }
+        }
+    }
+}
